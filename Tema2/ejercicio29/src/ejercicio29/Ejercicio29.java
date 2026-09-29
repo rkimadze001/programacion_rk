@@ -30,7 +30,7 @@ public class Ejercicio29 {
        
        //calcular de el cuadrato de la hipotenusa
        longitudDeHipotenusaCuadrato = longitudDeCateto1 * longitudDeCateto1 + longitudDeCateto2* longitudDeCateto2;
-       
+       //imprimir en la pantalla de resuldad 
        System.out.println("El cuadrado de la hipotenusa es: " + longitudDeHipotenusaCuadrato);
     }
     
