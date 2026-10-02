@@ -17,7 +17,7 @@ public class Ejercicio31 {
      */
     public static void main(String[] args) {
 
-        //imprimir figuros en la plantalla 
+        //imprimir figuros en la plantalla
         System.out.println("* * * * * * * * *              * * *               *                *");
         System.out.println("*               *           *          *         * * *            *   *");
         System.out.println("*               *        *               *     * * * * *        *       *");
