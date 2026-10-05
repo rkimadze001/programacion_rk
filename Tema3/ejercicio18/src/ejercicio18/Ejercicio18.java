@@ -7,7 +7,7 @@ package ejercicio18;
 import java.util.Scanner;
 
 /**
- * Programa: e pida una contraseña al usuario. Si la escribe bien le dará la
+ * Programa: le pida una contraseña al usuario. Si la escribe bien le dará la
  * enhorabuena, pero si la escribe mal 3 veces le dará un mensaje de error de
  * acceso.
  * @author RusudanKimadze
@@ -18,6 +18,7 @@ public class Ejercicio18 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //declaral y iniciar variables
         int contrasenia = 3982;
         int contraseniaEntrada, count = 0;
         Scanner entrada = new Scanner(System.in);
