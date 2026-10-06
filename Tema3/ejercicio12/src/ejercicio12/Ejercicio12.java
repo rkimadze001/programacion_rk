@@ -16,15 +16,16 @@ public class Ejercicio12 {
      */
     public static void main(String[] args) {
         // declarar y inisializar variable
-        int num = 11;
+        int numeroPrimero = 11;
+        int numeroUltimo = 133;
         
         //imprimir numeros entre 11 a 133 si esos numeros son pares
         do{
-            if(num%2 == 0){
-                System.out.println(num);
+            if(numeroPrimero%2 == 0){
+                System.out.println(numeroPrimero);
             }
-            num++;
-        }while(num < 133);
+            numeroPrimero++;
+        }while(numeroPrimero < numeroUltimo);
     }
     
 }
