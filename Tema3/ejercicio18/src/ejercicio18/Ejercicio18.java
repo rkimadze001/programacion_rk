@@ -31,7 +31,7 @@ public class Ejercicio18 {
               System.out.println("Enhorabuena!");
               break;
           }else{
-              System.out.println("(Pista 4 digits) ");
+              System.out.println("(Pista 4 digitos) ");
               count++; 
           }
           
