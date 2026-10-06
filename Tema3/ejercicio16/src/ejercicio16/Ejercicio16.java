@@ -5,7 +5,7 @@
 package ejercicio16;
 
 /**
- * Programa: mprima los números impares que existen entre los números 20 y el
+ * Programa: imprima los números impares que existen entre los números 20 y el
  * 160. Además, al final, nos dirá cuantos impares ha imprimido en total por
  * pantalla. 
  * @author RusudanKimadze
