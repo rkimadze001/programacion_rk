@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package practica;
+package practica3;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -11,7 +11,7 @@ import java.util.InputMismatchException;
  * Programa: practica de tema4
  * @author RusudanKimadze
  */
-public class Practica {
+public class Practica3 {
 
     /**
      * @param args the command line arguments
@@ -34,3 +34,4 @@ public class Practica {
     }
     
 }
+
