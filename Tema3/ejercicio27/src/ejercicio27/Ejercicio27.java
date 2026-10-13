@@ -16,8 +16,10 @@ public class Ejercicio27 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //declarar variables
         int primeroNumero, segundoNumero, numeroElegido, resultado=0;
         
+        //pedir entrada
         Scanner entrada = new Scanner(System.in);
         System.out.println("Introduzca un primero numero: ");
         primeroNumero = entrada.nextInt();
@@ -25,6 +27,7 @@ public class Ejercicio27 {
         System.out.println("Introduzca un segundo numero: ");
         segundoNumero = entrada.nextInt();
         
+        //bucle para optiones
         do{
             
             System.out.println("Por favor elegir numero de tu operacion: ");
