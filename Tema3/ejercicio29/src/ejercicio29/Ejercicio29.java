@@ -45,6 +45,7 @@ public class Ejercicio29 {
                 System.out.println("El numero que tienes que adivinar es menor que el numero introducido.");
             }else {
                 System.out.println("Adivinaste el número!!!");
+                System.out.println("Has intentado " + cont + " veces.");
             }
         }while(numeroEntrada != aleatorioEntero);
     }
