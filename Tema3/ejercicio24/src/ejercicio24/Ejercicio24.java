@@ -22,10 +22,12 @@ public class Ejercicio24 {
         int numeroPrimero = 1;
         int numeroUltimo;
         int cont=0;
-        //pedir numeroUltimo de usuario
+        
+        //crear una instancia de objeto scanner
         Scanner entrada = new Scanner(System.in);
         
-        //bucle para combrobar entrada de usuario
+        //bucle para comprobar entrada de usuario
+        
         do{
             System.out.println("Por favor entra el numero:");
             numeroUltimo = entrada.nextInt();
