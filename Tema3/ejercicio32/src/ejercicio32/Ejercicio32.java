@@ -20,9 +20,9 @@ public class Ejercicio32 {
         //declaracion de variables
         int anioActual, anioNacimiento, mesActual, mesNacimiento, 
             diaActual, diaNacimiento,
-            anios= 0, meses = 0, dias;
+            anios, meses, dias;
         
-        //nuebo instancia de objecto scanner
+        //nueva instancia de objecto scanner
         Scanner entrada = new Scanner(System.in);
         
         //entrada de usuario (actuales)
