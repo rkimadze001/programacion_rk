@@ -8,8 +8,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- *
- * @author alumno
+ * Programa: que juegue con el usuario a adivinar un número. El ordenador debe
+ * generar un número entero aleatorio entre 1 y 100, y el usuario tiene que
+ * intentar adivinarlo. si el usuario introduce algo que no es un número 
+ * (una letra, por ejemplo) se le avisará del error por pantalla y se contará como un intento.
+ * @author RusudanKimadze
  */
 public class Ejercicio30 {
 
@@ -51,7 +54,7 @@ public class Ejercicio30 {
                 }
                       
             }catch(InputMismatchException e){
-                System.out.println("No puede entrar la letra. Inténtalo de nuevo.");
+                System.out.println("No puede entrar algo que no es numero. Inténtalo de nuevo.");
                 entrada.nextLine();  
             }     
         } 
