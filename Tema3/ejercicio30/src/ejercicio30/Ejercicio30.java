@@ -20,10 +20,10 @@ public class Ejercicio30 {
         
         //varble declaracion y inicializacion    
         double aleatorio = Math.floor(Math.random() * 100 +1);
+        int numeroEntrada = 0, cont = 0 ;
         
         //casting - cambiamos typo de aleatorio
         int aleatorioEntero = (int) aleatorio;
-        int numeroEntrada = 0, cont = 0 ;
         
         //creamos nueva instancia de objecto scanner
         Scanner entrada = new Scanner(System.in);
@@ -32,28 +32,31 @@ public class Ejercicio30 {
         System.out.println("---- Juego: adivinar un número ----");
         
         //bulce para pedir el numero a usuario     
-        try{       
+              
         while(numeroEntrada != aleatorioEntero){
+            //para contar cada iteracion 
+            cont ++;
             
+            //capturar exception si usuario entra algo que no es un numero
+            try{ 
                 System.out.println("Por favor entra un numero entre 1 y 100: ");
-                numeroEntrada = entrada.nextInt();
+                numeroEntrada = entrada.nextInt(); 
+
                 if(aleatorioEntero > numeroEntrada){
-                     
-                System.out.println("El numero que tienes que adivinar es mayor que el numero introducido.");
-            }else if (aleatorioEntero < numeroEntrada){
-                System.out.println("El numero que tienes que adivinar es menor que el numero introducido.");
-            }else {
-                System.out.println("Adivinaste el número!!!");
-               
-                 
-            }
-            cont ++;    
-            }
-          }catch(InputMismatchException e){
-                System.out.println("No puede entrar la letra.");
-          }finally{
-             System.out.println("Has intentado " + cont + " veces.");
-          }
+                    System.out.println("El numero que tienes que adivinar es mayor que el numero introducido.");
+                }else if (aleatorioEntero < numeroEntrada){
+                    System.out.println("El numero que tienes que adivinar es menor que el numero introducido.");
+                }else {
+                    System.out.println("Adivinaste el número!!!");  
+                }
+                      
+            }catch(InputMismatchException e){
+                System.out.println("No puede entrar la letra. Inténtalo de nuevo.");
+                entrada.nextLine();  
+            }     
+        } 
+        
+        System.out.println("Has intentado " + cont + " veces.");
     }
         
 }

@@ -22,10 +22,10 @@ public class Ejercicio29 {
         //varble declaracion y inicializacion 
         
         double aleatorio = Math.floor(Math.random() * 100 +1);
+        int numeroEntrada, cont = 0 ;
         
         //casting - cambiamos typo de aleatorio
         int aleatorioEntero = (int) aleatorio;
-        int numeroEntrada, cont = 0 ;
         
         //creamos nueva instancia de objecto scanner
         Scanner entrada = new Scanner(System.in);
