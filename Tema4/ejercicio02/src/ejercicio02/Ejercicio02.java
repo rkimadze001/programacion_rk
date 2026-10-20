@@ -6,7 +6,10 @@ package ejercicio02;
 import java.util.Scanner;
 
 /**
- *
+ * programa: le solicita en el main al usuario 2 números y, si el primer número
+ * introducido es mayor que 10, se llamará a un método que los multiplicará y
+ * mostrará el resultado, y en caso contrario se llamará a un método que los
+ * sume.
  * @author RusudanKimadze
  */
 public class Ejercicio02 {

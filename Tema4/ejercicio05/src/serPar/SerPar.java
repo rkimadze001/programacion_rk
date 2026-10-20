@@ -6,9 +6,13 @@ package serPar;
 
 /**
  *
- * @author alumno
+ * @author RusudanKimadze
  */
 public class SerPar {
+    /**
+     * El metodo comprba si el numero es par o impar y immprima el resultado en la pantalla
+     * @param numero 
+     */
     public static void serPar(int numero){
         if(numero % 2 == 0){
             System.out.println("El numero introducido es par.");

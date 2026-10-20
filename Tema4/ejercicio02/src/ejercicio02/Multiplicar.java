@@ -6,9 +6,14 @@ package ejercicio02;
 
 /**
  *
- * @author alumno
+ * @author RusudanKimadze
  */
 public class Multiplicar {
+    /**
+     * EL metodo multiplica dos numeros y imprima en la pantalla el resultado
+     * @param num1
+     * @param num2 
+     */
     public static void multiplicar (int num1, int num2){
         int resultado = num1 * num2;
         System.out.println("La operación que se realizó es producto y el resultado es " + resultado);

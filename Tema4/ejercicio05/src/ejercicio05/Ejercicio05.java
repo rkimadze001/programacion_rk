@@ -18,7 +18,7 @@ public class Ejercicio05 {
      */
     public static void main(String[] args) {
         int numero;
-        
+        //crear nuevo instancia de la objeto Scanner y pedir el numero a usuario
         Scanner entrada = new Scanner(System.in);
         System.out.println("Por favor introduzca un numero: ");
         numero = entrada.nextInt();

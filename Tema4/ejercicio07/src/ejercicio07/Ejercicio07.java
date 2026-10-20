@@ -62,7 +62,7 @@ public class Ejercicio07 {
         
         Scanner entrada = new Scanner(System.in);
         
-        //pedir numero a usuario
+        //pedir los numeros a usuario
         
         System.out.println("Por favor, introduzca el primer numero: ");
         num1 = entrada.nextInt();

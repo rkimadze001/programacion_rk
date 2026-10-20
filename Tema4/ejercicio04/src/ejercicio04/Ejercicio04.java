@@ -6,8 +6,9 @@ package ejercicio04;
 import java.util.Scanner;
 
 /**
- *
- * @author alumno
+ * Programa: pida tres números (en el main) y se los pase a un método que los
+ * imprima por pantalla el menor de ellos.
+ * @author RusudanKimadze
  */
 public class Ejercicio04 {
 

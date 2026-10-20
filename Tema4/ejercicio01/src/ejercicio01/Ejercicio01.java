@@ -19,7 +19,7 @@ public class Ejercicio01 {
     public static void main(String[] args) {
         // TODO code application logic here
         int numeroUsuario;
-        
+        //crear nuevo instance de la objeto Scanner y pedir el numero de usuario
         Scanner entrada = new Scanner(System.in);
         System.out.println("Por favor, introduzca un numero: ");
         numeroUsuario = entrada.nextInt();
@@ -28,11 +28,14 @@ public class Ejercicio01 {
         serPositivo(numeroUsuario);
     }
     
-    /*
-    * El metodo para comprobar si el numero es positivo o negativo y 
-    * imprimir en la pantalla
-    */
+    /**
+     * El metodo para comprobar si el numero es positivo o negativo y 
+     * imprimir en la pantalla
+     * @param numero 
+     */
     public static void serPositivo (int numero){
+        
+        //condicional para comprobar si el numero es positivo o negativo
         if(numero > 0){
             System.out.println("El número introducido es positivo.");
         }else if (numero < 0){
