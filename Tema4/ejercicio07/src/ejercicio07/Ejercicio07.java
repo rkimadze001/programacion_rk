@@ -57,7 +57,7 @@ public class Ejercicio07 {
      * @param args 
      */
     public static void main(String[] args) {
-        //inicialisar y declarar variables
+        //declarar variables
         int num1, num2, num3, num4;
         
         Scanner entrada = new Scanner(System.in);
