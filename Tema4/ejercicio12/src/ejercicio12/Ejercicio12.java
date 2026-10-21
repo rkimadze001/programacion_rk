@@ -39,7 +39,7 @@ public class Ejercicio12 {
     
     /**
      * El metodo comproba si metodo esValido es true o false y mostra mensage enhorabuena o error
-     * @param serValido 
+     * @param esValido 
      */
     
     public static void mostrarResultado (boolean esValido){

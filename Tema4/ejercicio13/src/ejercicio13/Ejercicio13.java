@@ -12,7 +12,10 @@ import java.util.Scanner;
  */
 public class Ejercicio13 {
     
-    
+    /**
+     * El metodo le pide el numero a usuario
+     * @return 
+     */
     public static int pedirNumero(){
         int numeroEntrada;
         
@@ -22,13 +25,21 @@ public class Ejercicio13 {
         return numeroEntrada;
     }
     
-    
+    /**
+     * El metodo va a volver true si el numero es mayor de 1 o false en el caso contratio
+     * @param numero
+     * @return 
+     */
     public static boolean esMayor(int numero){
         
         return numero > 1;  
         
     }
     
+    /**
+     * El metodo muestra resultado en la pantalla
+     * @param numero 
+     */
     public static void mostrarResultado(int numero){
         
         System.out.println("Los numero entre 1 y " + numero + " son: ");
@@ -43,9 +54,11 @@ public class Ejercicio13 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //declarar variables
         int numeroUltimo;
         boolean mayor;
         
+        //bucle para combinar y llamar cada metodo necesitario para muestrar nuestro resultado
         do{ 
             System.out.println("Por favor introduzca un numero mayor de 1: ");
             numeroUltimo = pedirNumero();
