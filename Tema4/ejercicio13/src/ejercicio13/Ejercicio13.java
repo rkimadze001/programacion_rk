@@ -7,7 +7,8 @@ package ejercicio13;
 import java.util.Scanner;
 
 /**
- *
+ * programa: imprima todos los números existentes entre el número 1 y otro
+ * introducido por el usuario.
  * @author ruskakimadze
  */
 public class Ejercicio13 {
@@ -43,7 +44,7 @@ public class Ejercicio13 {
     public static void mostrarResultado(int numero){
         
         System.out.println("Los numero entre 1 y " + numero + " son: ");
-        
+       // bucle para imprimir todos los numeros entre 1 y el numero entrado a usuario
         for(int i = 1; i < numero; i++){
             System.out.print(" - " + i + " ");
         }
