@@ -29,9 +29,13 @@ public class Ejercicio10 {
             
     }
     
+    /**
+     * El metodo calcula y imprima la tabla de multiplicar
+     * @param numero 
+     */
     public static void tablaMultiplicar(int numero){        
-        for(int i=0; i < 10; i++ ){
-            System.out.println(numero + 'x'+ i);
+        for(int i=0; i < 11; i++ ){
+            System.out.println(numero + " x "+ i + " = " + numero * i);
         }
     }
    
@@ -40,6 +44,11 @@ public class Ejercicio10 {
      */
     public static void main(String[] args) {
         
+        //imprimir en la pantalla
+        System.out.println("Introduzca un numero para calcular su tabla de multiplicar:");
+        
+        //llamar el metodo pedirNumero dentro de el metodo tablaMultiplicar
+        tablaMultiplicar(pedirNumero());
         
     }
     
