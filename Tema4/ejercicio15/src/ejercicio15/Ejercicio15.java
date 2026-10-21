@@ -67,9 +67,13 @@ public class Ejercicio15 {
             default: 
                 System.out.println("Tienes que elegir un numeros de menu entre 1 y 5!");
         }
+       
+        //condicional para no imprimir la resultado cuando intentaremos dividir en 0
+        if (numeroOperacion != 4 || num2 != 0 ){ 
+            System.out.println("EL resultado de la operacion es: " + resultado);
+            System.out.println("----------------------------------------------------------------");
+        }
         
-        System.out.println("EL resultado de la operacion es: " + resultado);
-        System.out.println("----------------------------------------------------------------");
     }
     /**
      * @param args the command line arguments
