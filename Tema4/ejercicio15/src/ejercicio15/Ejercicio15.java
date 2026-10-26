@@ -64,6 +64,9 @@ public class Ejercicio15 {
                     System.out.println("No podemos dividir entre 0;");
                 }
                 break;
+            case 5:
+                System.out.println("Has salido de programa.");
+                break;
             default: 
                 System.out.println("Tienes que elegir un numeros de menu entre 1 y 5!");
         }
@@ -94,14 +97,7 @@ public class Ejercicio15 {
             System.out.println("----------------------------------------------------------------");
             mostrarMenu();
             numeroMenu = pedirNumero();
-           
-            if(numeroMenu == 5){
-                System.out.println("Has salido de programa.");
-                break;
-            }else{
-                operaciones(numeroMenu, numeroPrimero, numeroSegundo);
-   
-            }
+            operaciones(numeroMenu, numeroPrimero, numeroSegundo);
             
         }while (numeroMenu != 5);
                 
