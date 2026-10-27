@@ -39,14 +39,17 @@ public class Ejercicio12 {
     
     /**
      * El metodo comproba si metodo esValido es true o false y mostra mensage enhorabuena o error
-     * @param esValido 
+     * @param esValido
+     * @param cont
      */
     
-    public static void mostrarResultado (boolean esValido){
+    public static void mostrarResultado (boolean esValido, int cont){
         if(esValido){
             System.out.println("enhorabuena");
         }else{
-            System.out.println("Error de acceso");
+            if(cont == 3){
+                System.out.println("Error de acceso");
+            }      
         }
     }
     
@@ -70,17 +73,14 @@ public class Ejercicio12 {
              // llamar el metodo esValido y guardar valor en valido
              valido = esValido(contraseniaEntrada);
              
-             //condicional para llamar mostrarResultado si contrasenia es true o no
-             if(valido){
-                 mostrarResultado(valido);
-                 break;         
-             }else {
-                 cont ++;
-                 if(cont == 3){
-                     mostrarResultado(valido); 
-                 }                      
-             }      
-        }while(cont < 3);
+             //condicional para incrementar cont si contrasenia no es la verdad
+             if(!valido){
+                 cont ++;       
+             }
+             //llamar metodo mostratResultado 
+             mostrarResultado(valido, cont); 
+             
+        }while(cont < 3 || valido);
         
     }
     
