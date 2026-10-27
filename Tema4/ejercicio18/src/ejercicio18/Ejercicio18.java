@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * Programa: Te pida tu nombre y a continuación te lo muestre 5 veces.
- * @author ruskakimadze
+ * @author RusudanKimadze
  */
 public class Ejercicio18 {
     

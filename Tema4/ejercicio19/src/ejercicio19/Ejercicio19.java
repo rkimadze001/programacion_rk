@@ -7,8 +7,10 @@ package ejercicio19;
 import java.util.Scanner;
 
 /**
- *
- * @author ruskakimadze
+ * Programa: que lea un día de la semana que introduzca el usuario (Lunes, 
+ * Martes, Miércoles, Jueves, Viernes, Sábado o Domingo) y, según sea su valor, 
+ * escriba en pantalla su posición en la semana.
+ * @author RusudanKimadze
  */
 public class Ejercicio19 {
     
@@ -18,7 +20,7 @@ public class Ejercicio19 {
         //crear nuevo instancia de objeto Scanner. 
         
         Scanner entrada = new Scanner(System.in);
-        //monstrat el mensage guardar valor entrada a usuario en variable nombre.
+        //monstrat el mensage guardar valor entrada a usuario en variable dia.
         System.out.println("Por favor, introduzca un día de la semana: ");
         dia = entrada.nextLine();
         
