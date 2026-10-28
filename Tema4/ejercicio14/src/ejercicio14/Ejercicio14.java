@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Ejercicio14 {
 
     /**
-     * El metodo pedir numero a usuario y revolver esto numero
+     * El metodo para pedir el numero a usuario y devolver esto numero
      * @return 
      */
     public static int pedirNumero(){
@@ -27,7 +27,8 @@ public class Ejercicio14 {
     }
     
     /**
-     * El metodo revolver si el numero es mayor de 1 o no, revolva true en caso que es          * mayor y false en caso contrario. 
+     * El metodo devolver si el numero es mayor de 1 o no, devolva true en caso que es          
+     * mayor y false en caso contrario. 
      * @param numero
      * @return 
      */
