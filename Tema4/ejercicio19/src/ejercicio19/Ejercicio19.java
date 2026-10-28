@@ -14,7 +14,10 @@ import java.util.Scanner;
  */
 public class Ejercicio19 {
     
-    
+    /**
+     *El metodo para pedir el dia de la semana a usuario y devolva este valor.
+     * @return 
+     */
     public static String pedirDia(){
         String dia;
         //crear nuevo instancia de objeto Scanner. 
@@ -28,6 +31,10 @@ public class Ejercicio19 {
         return dia;
     }
     
+    /**
+     * El metodo utiliza condicional switch para mostrar mensage adecuada de entrada a usuario.
+     * @param dia 
+     */
     public static void comprobarDia(String dia){
         
         switch(dia){
@@ -44,7 +51,7 @@ public class Ejercicio19 {
                 System.out.println("El Jueves es el cuarto dia de la semana.");
                 break;
             case "Viernes":
-                System.out.println("El Lunes es el quinto dia de la semana.");
+                System.out.println("El Viernes es el quinto dia de la semana.");
                 break;
             case "Sabado":
                 System.out.println("El Sabado es el sexto dia de la semana.");
@@ -61,9 +68,12 @@ public class Ejercicio19 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //inicializar variable
         String dia;
         
+        //llamar el metodo pedirDia y guardar value en variable dia
         dia = pedirDia();
+        //llamar el metodo comprobarDia con variable dia como argumento 
         comprobarDia(dia);
         
     }

@@ -7,8 +7,9 @@ package ejercicio20;
 import java.util.Scanner;
 
 /**
- *
- * @author ruskakimadze
+ * Programa: le haga un examen al usuario, preguntándole 
+ * cuál es la capital de España y quién descubrióAmérica.
+ * @author RusudanKimadze
  */
 public class Ejercicio20 {
     
@@ -18,7 +19,7 @@ public class Ejercicio20 {
     final static int NOTA_DE_PREGUNTA = 5;
     
     /**
-     * El metodo para pedir respuesta a usuario
+     * El metodo para pedir respuesta a usuario y devolva este respuesta
      * @return 
      */
     public static String pedirRespuesta(){
@@ -34,7 +35,7 @@ public class Ejercicio20 {
     }
     
     /**
-     * comprobar si respuesta entrada y respuesta correcta son iguales
+     * comprobar si respuesta entrada y respuesta correcta son iguales y devolva true o false
      * @param respuestaEntrada
      * @param respuestaCorecta
      * @return 
@@ -44,7 +45,7 @@ public class Ejercicio20 {
     }
     
     /**
-     * el metodo para mostrar primera pregunta y devolver nota de pregunta
+     * el metodo para mostrar primera pregunta y devolva nota de pregunta
      * @return 
      */
     public static int pregunta1(){
@@ -64,7 +65,7 @@ public class Ejercicio20 {
     }   
     
     /**
-     * el metodo para mostrar segunda pregunta y devolver nota de pregunta
+     * el metodo para mostrar segunda pregunta y devolva nota de pregunta
      * @return 
      */
     public static int pregunta2(){
@@ -89,16 +90,19 @@ public class Ejercicio20 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+       //declarar y inicializar variable
         int notaFinal = 0;
         
-
+        //mostrar inicial mensage
         System.out.println("EXAMEN DE CULTURA GENERAL");
-        
+        System.out.println("--------------------------------------------------");
+       
+        //llamar los metodos pregunta1 y pregunta2 y aniadir los valores que ellos devolven a notaFinal
         notaFinal += pregunta1();
         notaFinal += pregunta2();
 
-        
+       
+        System.out.println("--------------------------------------------------");
         System.out.println("NOTA DEL EXAMEN: " + notaFinal);
 
         
