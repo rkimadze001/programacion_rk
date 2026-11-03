@@ -5,8 +5,8 @@
 package ejercicio23;
 
 /**
- *
- * @author ruskakimadze
+ * Progrma: Crea clases llamada Constantes y PruebaConstantes en el mismo paquete
+ * @author RusudanKimadze
  */
 public class Ejercicio23 {
 
