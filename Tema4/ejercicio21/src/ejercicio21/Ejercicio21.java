@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author RusudanKimadze
  */
 public class Ejercicio21 {
-    
+  
     
     /**
      * El metodo para pedir el numero a usuario y devolver eso numero
