@@ -7,12 +7,18 @@ package ejercicio24;
 import java.util.Scanner;
 
 /**
- *
- * @author ruskakimadze
+ * Programa: contenga un método donde le pidamos al usuario su nombre, otro
+ * método donde le pidamos su edad y otro método llamado mayorDeEdad, que reciba
+ * la edad como entero por parámetro y muestre un mensaje por pantalla de si el
+ * usuario llamado XXX es mayor de edad o no.
+ * @author RusudanKimadze
  */
 public class Ejercicio24 {
     
-    
+    /**
+     * El metodo para pedir nombre a usuario y devolver este valor
+     * @return 
+     */
     public static String pedirNombre(){
         String nombre;
         
@@ -24,6 +30,10 @@ public class Ejercicio24 {
         return nombre;
     }
     
+    /**
+     * El metodo para pedir edad a usuario y devolver este valor
+     * @return 
+     */
     public static int pedirEdad(){
         int edad;
          
@@ -35,8 +45,13 @@ public class Ejercicio24 {
         return edad;
     }
     
+    /**
+     * El metodo que comproba si el usuario es mayor de edad y imprimir en la pantalla el resultado
+     * @param edad
+     * @param nombre 
+     */
     public static void mayorDeEdad(int edad, String nombre){
-        if(edad > 80){
+        if(edad >= 18 ){
             System.out.println("El usuario llamado " + nombre + " es mayor de edad.");
         }else{
             System.out.println("El usuario llamado " + nombre + " no es mayor de edad.");
