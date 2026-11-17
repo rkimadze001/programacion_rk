@@ -47,5 +47,18 @@ public class Practica {
         
         //mostrar contador de bicicleta
         System.out.println("Contador de bicicletas: " + Bicicleta.getContadorBicicleta());
+        
+        //Bicicleta bici3 = new Bicicleta("Coy", "negro", 2000, 3);
+        //bici3.mostrarBicicleta();
+        
+        //creamos ciclista
+        Ciclista ciclista1 = new Ciclista("Nick", 200);
+        Bicicleta bici4 = new Bicicleta("Canyon", "negro", 2000, 3, ciclista1);
+        
+        System.out.println(bici4.toString());
+        
+        Bicicleta bici5 = new Bicicleta("Canyon", "negro", 2000, 3, new Ciclista());
+        
+        Bicicleta bici6 = new Bicicleta("Canyon", "negro", 2000, 3, new Ciclista("Ana", 2));
     }  
 }

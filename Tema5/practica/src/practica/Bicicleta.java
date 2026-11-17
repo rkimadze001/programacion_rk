@@ -17,7 +17,48 @@ public class Bicicleta {
     
     //atributo static siempre se inicializa en la declaracion
     private static int contadorBicicletas = 0;
+    private Ciclista ciclista;
+    
+    
+    
     //metodos
+    
+    //constructores
+    //1. por defecto
+    public Bicicleta(){
+        this.marca = "";
+        this.color = "";
+        this.precio = 0.0f;
+        this.anios = 0;
+        
+        //iniscializamos un ciclista
+        this.ciclista = new Ciclista();
+        //incrementos el valor
+        aumentarContadorBicicleta();
+        
+      
+
+    }
+    
+    //2. parametrizado
+    public Bicicleta(String marca, String color, float precio, int anios, Ciclista ciclista){
+        this.marca = marca;
+        this.color = color;
+        this.precio = precio;
+        this.anios = anios;
+        this.ciclista = ciclista;
+        aumentarContadorBicicleta();
+    }
+    
+    public Bicicleta(String color){
+        this.marca = "";
+        this.color = color;
+        this.precio = 0.0f;
+        this.anios = 0;
+        
+        
+        aumentarContadorBicicleta();
+    }
     //getters/ setters
     public String getMarca(){
         return marca;
@@ -46,6 +87,14 @@ public class Bicicleta {
     public void setAnios(int a){
         anios = a;
     }
+    
+    public Ciclista getCiclista(){
+        return ciclista;
+    }
+    
+    public void setCiclista(Ciclista ciclista){
+        this.ciclista = ciclista;
+    }
     //otros metodos
     public void mostrarAntiguedad(){
         if(anios>10){
@@ -68,11 +117,12 @@ public class Bicicleta {
         System.out.println("Color" + color);
         System.out.println("Precio" + precio);
         System.out.println("Años" + anios);
-
+        System.out.println("Ciclista: " + ciclista.toString());
     }
     
     @Override
     public String toString(){
-        return "Marca: " + marca + ", color: " +color + ", precio" +precio + ", anios: " + anios;
+        return "Marca: " + marca + ", color: " +color + ", precio" +precio + ", anios: " + anios 
+                + ", Ciclista: " + ciclista;
     }
 }
