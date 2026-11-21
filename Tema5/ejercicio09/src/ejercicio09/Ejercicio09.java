@@ -7,24 +7,34 @@ package ejercicio09;
 import java.util.Scanner;
 
 /**
- *
- * @author alumno
+ * Programa: lea tres números e imprima por pantalla el mayor de ellos.
+ * @author Rusudan Kimadze
  */
 public class Ejercicio09 {
-    
+    /**
+     * El metodo para pedir un numero al usuario y devolver este valor
+     * @return 
+     */
     public static int pedirNumero(){
         Scanner entrada = new Scanner(System.in);
         return entrada.nextInt();
     }
     
-    public static int comprobarNumeros(int num1,int num2,int num3){
+    /**
+     * El metodo para pasar tres objetos como parametros y comprobar y devolver mayor valores de estos objetos.
+     * @param num1
+     * @param num2
+     * @param num3
+     * @return 
+     */
+    public static int comprobarNumeros(Numero num1,Numero num2,Numero num3){
         int numeroMayor;
-        if(num1 > num2 && num1> num3){
-            numeroMayor = num1;
-        }else if(num2> num1 && num2 > num3){
-            numeroMayor = num2;
+        if(num1.getValor() >= num2.getValor() && num1.getValor()>= num3.getValor()){
+            numeroMayor = num1.getValor();
+        }else if(num2.getValor()>= num1.getValor() && num2.getValor() >= num3.getValor()){
+            numeroMayor = num2.getValor();
         }else{
-            numeroMayor = num3;
+            numeroMayor = num3.getValor();
         }
         return numeroMayor;
     }
@@ -32,22 +42,20 @@ public class Ejercicio09 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int num1, num2, num3;
-        
+        //imprimir mensaje para pedir numero entero y crear objetos de tres Numeros
         System.out.println("Por favor introduzca primer numero: " );
-        num1 = pedirNumero();
+        Numero num1 = new Numero(pedirNumero());
         
         System.out.println("Ahora introduzca segundo numero: " );
-        num2 = pedirNumero();
+        Numero num2 = new Numero(pedirNumero());
         
         System.out.println("En final introduzca tercer numero: " );
-        num3 = pedirNumero();
+        Numero num3 = new Numero(pedirNumero());
         
+        //llamar el metodo para comprobar valores de nuevos objectos 
+        int numeroMaximo = comprobarNumeros(num1,num2,num3);
         
-        
-        int numeroMaximo = comprobarNumeros((new Numero(num1)).getValor(), (new Numero(num2)).getValor(), (new Numero(num3)).getValor());
-        
-        System.out.println("Numero maximo entre estos tres es: " + numeroMaximo);
+        System.out.println("El numero maximo de los tres es: " + numeroMaximo);
     }
     
 }
