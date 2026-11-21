@@ -7,7 +7,10 @@ package ejercicio11;
 import java.util.Scanner;
 
 /**
- *
+ * Programa: en el que le solicites al usuario 2 números y, si el primer
+ * número introducido es mayor que 10 se multipliquen, y en caso
+ * contrario que se sumen Se le mostrará al usuario la operación
+ * realizada y su resultado
  * @author ruskakimadze
  */
 public class Test {
