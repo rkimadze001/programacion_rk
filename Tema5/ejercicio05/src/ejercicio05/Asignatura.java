@@ -14,17 +14,22 @@ public class Asignatura {
     private float nota;  
    
     //estatic variable
-    private static int notaCandidad = 0;
+    private static int cantidadDeAsignaturas = 0;
+    
     //contructor
     //por defecto
     public Asignatura (){
         this.nombre = "";
         this.nota = 0.0f;
+        
+        contarAsignaturas();
     }
     
-    public Asignatura(String nombre, float nota){
+    public Asignatura(String nombre){
         this.nombre = nombre;
         this.nota = 0.0f;
+        
+        contarAsignaturas();
     }
     
     //metodos
@@ -46,12 +51,12 @@ public class Asignatura {
     }
     
     //metodos estaticos
-    public static void contarCandidadDeNota(){
-        notaCandidad++;
+    public static void contarAsignaturas(){
+        cantidadDeAsignaturas++;
     }   
     
-    public static int mostrarCandidadDeNota(){
-        return notaCandidad;
+    public static int mostratCantidadDeAsignaturas(){
+        return cantidadDeAsignaturas;
     }  
     
     @Override
