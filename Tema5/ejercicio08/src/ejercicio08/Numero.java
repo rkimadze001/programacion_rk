@@ -9,7 +9,7 @@ package ejercicio08;
  * @author alumno
  */
 public class Numero {
-    //argunemto
+    //atributos
     private int valor;
     
     //constructores

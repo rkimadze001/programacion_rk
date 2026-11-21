@@ -7,8 +7,9 @@ package ejercicio05;
 import java.util.Scanner;
 
 /**
- *
- * @author alumno
+ * Program: programa el que le pidas al usuario las notas de las 6 asignaturas del
+ * Ciclo de DAM y te calcule la nota media del curso.
+ * @author RusudanKimadze
  */
 public class Ejercicio05 {
     
