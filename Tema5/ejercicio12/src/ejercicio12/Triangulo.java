@@ -26,11 +26,11 @@ public class Triangulo {
     
     //metodos
     //setters/getters
-    public void setCateto1(float cateto1){
+    public void setCateto1(double cateto1){
         this.cateto1 = cateto1;
     }
     
-    public void setCateto2(float cateto2){
+    public void setCateto2(double cateto2){
         this.cateto2 = cateto2;
     }
     
