@@ -42,7 +42,7 @@ public class Test {
     
     /**
      * el metodo para mostrar pregunta y devolva nota de pregunta
-     * @param preguntar
+     * @param enunciado1
      * @return 
      */
     public static float preguntar(Enunciado enunciado1){

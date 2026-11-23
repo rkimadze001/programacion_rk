@@ -32,6 +32,13 @@ public class Asignatura {
         contarAsignaturas();
     }
     
+    public Asignatura(String nombre, float nota){
+        this.nombre = nombre;
+        this.nota = nota;
+        
+        contarAsignaturas();
+    }
+    
     //metodos
     //setter y getter
     public void setNota(float nota){
