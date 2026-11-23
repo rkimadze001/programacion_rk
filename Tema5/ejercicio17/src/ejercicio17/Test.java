@@ -76,8 +76,12 @@ public class Test {
         notaFinal += preguntar(enunciado2, "colon");
         
         //tercero pregunta
-        Enunciado enunciado3 = new Enunciado("2ª PREGUNTA: ¿Cuál es la capital de Georgia?: ");
-        notaFinal += preguntar(enunciado3, "Tbilisi");
+        Enunciado enunciado3 = new Enunciado("3ª PREGUNTA: ¿Cuál es la capital de Georgia?: ");
+        notaFinal += preguntar(enunciado3, "tbilisi");
+        
+        //cuarto pregunta
+        Enunciado enunciado4 = new Enunciado("4ª PREGUNTA: ¿Cuál es la moneda oficial de Georgia?: ");
+        notaFinal += preguntar(enunciado4, "lari");
        
         //mostrar nota final
         System.out.println("He finalizado el examen. Tu nota final es: "+ notaFinal);
