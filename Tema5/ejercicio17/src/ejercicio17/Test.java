@@ -14,9 +14,12 @@ import java.util.Scanner;
  * @author RusudanKimadze
  */
 public class Test {
-    
     //inicialisar constante
     final static float NOTA_DE_PREGUNTA = 2.5f;
+    final static String CAPITAL_DE_ESPANIA = "Madrid";
+    final static String DESCUBRIDOR_DE_AMERICA  = "Colon";
+    final static String CAPITAL_DE_GEORGIA = "Tbilisi";
+    final static String MONEDA_DE_GEORGIA = "lari";
     
     /**
      * El metodo para pedir la respuesta al usuario y devolver este valor
@@ -42,18 +45,17 @@ public class Test {
      * @param preguntar
      * @return 
      */
-    public static float preguntar(Enunciado enunciado1, String respuestaCorrecta){
+    public static float preguntar(Enunciado enunciado1){
+        //declaracion y inicializacion de variables
         float notaPregunta = 0; 
         
         System.out.println(enunciado1.getPregunta());
-
-        enunciado1.setRespuesta(pedirRespuesta());
         
-        if(esCorrecta(enunciado1.getRespuesta(), respuestaCorrecta)){
+        if(esCorrecta(enunciado1.getRespuesta(), pedirRespuesta())){
             System.out.println("Muy bien, respuesta correcta.");
             notaPregunta = NOTA_DE_PREGUNTA;
         }else{
-            System.out.println("No es correcto. La respuesta correcta seria: " + respuestaCorrecta);
+            System.out.println("No es correcto. La respuesta correcta seria: " + enunciado1.getRespuesta());
         }
         
         return notaPregunta;
@@ -68,20 +70,20 @@ public class Test {
          float notaFinal = 0;
         //crear objetos de clase Enunciado
         //primero pregunta
-        Enunciado enunciado1 = new Enunciado("1ª PREGUNTA: ¿Cuál es la capital de España?: ");
-        notaFinal += preguntar(enunciado1, "madrid");
+        Enunciado enunciado1 = new Enunciado("1ª PREGUNTA: ¿Cuál es la capital de España?: ", CAPITAL_DE_ESPANIA);
+        notaFinal += preguntar(enunciado1);
        
         //segunda pregunta
-        Enunciado enunciado2 = new Enunciado("2ª PREGUNTA: ¿Quién descubrió América?: ");
-        notaFinal += preguntar(enunciado2, "colon");
+        Enunciado enunciado2 = new Enunciado("2ª PREGUNTA: ¿Quién descubrió América?: ", DESCUBRIDOR_DE_AMERICA);
+        notaFinal += preguntar(enunciado2);
         
         //tercero pregunta
-        Enunciado enunciado3 = new Enunciado("3ª PREGUNTA: ¿Cuál es la capital de Georgia?: ");
-        notaFinal += preguntar(enunciado3, "tbilisi");
+        Enunciado enunciado3 = new Enunciado("3ª PREGUNTA: ¿Cuál es la capital de Georgia?: ", CAPITAL_DE_GEORGIA);
+        notaFinal += preguntar(enunciado3);
         
         //cuarto pregunta
-        Enunciado enunciado4 = new Enunciado("4ª PREGUNTA: ¿Cuál es la moneda oficial de Georgia?: ");
-        notaFinal += preguntar(enunciado4, "lari");
+        Enunciado enunciado4 = new Enunciado("4ª PREGUNTA: ¿Cuál es la moneda oficial de Georgia?: ", MONEDA_DE_GEORGIA);
+        notaFinal += preguntar(enunciado4);
        
         //mostrar nota final
         System.out.println("He finalizado el examen. Tu nota final es: "+ notaFinal);

@@ -21,9 +21,9 @@ public class Enunciado {
         contarPreguntas();
     }
     
-    public Enunciado(String pregunta){
+    public Enunciado(String pregunta, String respuesta){
         this.pregunta = pregunta;
-        this.respuesta = "";
+        this.respuesta = respuesta;
         contarPreguntas();
 
     }
